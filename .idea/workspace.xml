@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acc4be7-675a-40c7-8fab-4e9fb80d194f" name="Default Changelist" comment="" />
+    <list default="true" id="0acc4be7-675a-40c7-8fab-4e9fb80d194f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Background@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Catalog.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Macbook2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Macbook2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Mail Icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Person.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Phone Icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Trumpet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Trumpet@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/iPhone2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/iPhone2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,11 +73,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600430541790</updated>
-      <workItem from="1600430543429" duration="1255000" />
+      <workItem from="1600430543429" duration="4673000" />
+      <workItem from="1600452904437" duration="16511000" />
+      <workItem from="1600697596655" duration="217000" />
+      <workItem from="1601116524004" duration="9134000" />
+      <workItem from="1609159939955" duration="5155000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601117781224">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="0" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1601117781224" />
+    <state x="400" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1601153127384">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="400" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1601153127384" />
   </component>
 </project>

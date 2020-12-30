@@ -100,7 +100,9 @@ nav {
       color: $grayColor;
       font-family: $fontOpensans;
       text-decoration: none;
-      font-size: 11px;
+      font-size: 14px;
+      font-weight: 600;
+
 
     }
 
@@ -112,7 +114,7 @@ nav {
       width: 60px;
       height: 3px;
       background-color: $blueColor;
-
+      transition: all 5s ease;
     }
 
   }
@@ -121,6 +123,7 @@ nav {
 .page-nav-burger {
   color: #08A6E4;
   margin-right: 20px;
+  transition: all 5s ease;
   display: none;
 }
 

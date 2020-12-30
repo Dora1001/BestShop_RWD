@@ -156,12 +156,22 @@ section {
     color: white;
     box-shadow: 5px 10px 14px, $blueColor;
 
-    .button_open {
-      font-size: 17px;
-    }
-
   }
 
+}
+
+button.button_open {
+  font-size: 18px;
+}
+
+button.button_open:hover {
+  box-shadow: 2px 2px 5px #08A6E4;
+  transition: all 200ms ease-out;
+
+}
+
+button.button_open:focus {
+  outline: 0px solid transparent;
 }
 
 

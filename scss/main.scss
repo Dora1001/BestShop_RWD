@@ -78,6 +78,11 @@ nav {
     margin-left: 60px;
   }
 
+  .fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
@@ -147,6 +152,10 @@ section {
     border: 0;
     color: white;
     box-shadow: 5px 10px 14px, $blueColor;
+
+    .button_open {
+      font-size: 17px;
+    }
 
   }
 
@@ -408,24 +417,24 @@ h2 {
   border-radius: 5px;
 }
 
-  .pricing-pack {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: $fontRaleway;
-  }
+.pricing-pack {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $fontRaleway;
+}
 
-  .dolar {
-    font-size: 46px;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
-  }
+.dolar {
+  font-size: 46px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+}
 
-  .dolar-pink {
-@extend .dolar;
-    color: $pinkColor;
-  }
+.dolar-pink {
+  @extend .dolar;
+  color: $pinkColor;
+}
 
 .dolar-blue {
   @extend .dolar;
@@ -523,13 +532,13 @@ ul li {
 }
 
 
-
 .contact {
   margin-bottom: 60px;
   margin-top: 60px;
   justify-content: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   .contact-text {
     position: relative;
@@ -559,9 +568,6 @@ ul li {
 }
 
 
-
-
-
 .contact-text span {
   color: grey;
   font-family: 'Open Sans', sans-serif;
@@ -572,6 +578,7 @@ ul li {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
+  margin-right: 70px;
 }
 
 input {
@@ -587,8 +594,8 @@ input {
 .contact-mail:before {
   position: absolute;
   content: "";
-  top:207px;
-  left:0;
+  top: 207px;
+  left: 0;
   background-image: url("../images/Mail Icon.svg");
   background-size: cover;
   width: 20px;
@@ -599,8 +606,8 @@ input {
 .contact-tel:before {
   position: absolute;
   content: "";
-  top:207px;
-  left:210px;
+  top: 207px;
+  left: 210px;
   background-image: url("../images/Phone Icon.svg");
   background-size: cover;
   width: 20px;
@@ -636,7 +643,7 @@ label {
 
 @media (max-width: 820px) {
 
-  .pricing-first  {
+  .pricing-first {
     width: 200px;
   }
 
@@ -741,7 +748,17 @@ label {
   }
 
 
-}
+  @media (max-width: 420px) {
+
+  }
+    .contact .contact-text {
+      position: relative;
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+
+  }
 
 
 

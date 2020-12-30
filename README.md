@@ -2,7 +2,7 @@
 
 ## About
 
-Workshop a have made in programing school by me.
+Workshop I have made in programing school (Coders Lab).
 
 • One page site
 

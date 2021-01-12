@@ -21,7 +21,9 @@
 }
 
 .popular__box {
-  @include flex();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
   margin: 30px 60px 30px 60px;

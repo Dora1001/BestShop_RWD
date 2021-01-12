@@ -136,6 +136,31 @@ ul li {
   outline: 0px solid transparent;
 }
 
+@media (max-width: 820px) {
+  .menu__list-burger {
+    display: flex;
+  }
+
+  .menu__list-item {
+    position: fixed;
+    top: -290px;
+    background: white;
+    border-bottom: 1px solid grey;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 100px;
+  }
+
+  .menu__list-item.show {
+    top: 0;
+  }
+  .menu__list-item.show .header {
+    margin-top: 300px;
+  }
+}
 .popular {
   padding: 0;
 }
@@ -159,7 +184,7 @@ ul li {
 .popular__box {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
   margin: 30px 60px 30px 60px;
@@ -470,7 +495,7 @@ ul li {
 .contact__text {
   position: relative;
   flex-direction: column;
-  margin-right: 50px;
+  margin-right: 90px;
   font-family: "Open Sans", sans-serif;
 }
 

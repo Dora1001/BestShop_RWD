@@ -26,7 +26,7 @@
 .contact__text {
   position: relative;
   flex-direction: column;
-  margin-right: 50px;
+  margin-right: 90px;
   font-family: $fontOpensans;
 }
 
@@ -40,7 +40,7 @@
 
 .contact__form--label {
   color: blue;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $fontOpensans;
   font-size: 12px;
 }
 
@@ -71,7 +71,6 @@
   }
 
 }
-
 
 .contact__mail {
   margin-left: 30px;

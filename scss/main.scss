@@ -1,6 +1,15 @@
-@import "pages/home";
-
+@import "base/reset";
 @import "abstract/variables";
 @import "abstract/mixins";
-
 @import "base/typography";
+
+@import "layouts/header";
+@import "layouts/popular";
+@import "layouts/articles";
+@import "layouts/prices";
+@import "layouts/contact";
+
+
+
+
+

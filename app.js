@@ -1,6 +1,6 @@
-const btn = document.querySelector(".page-nav-burger");
+const btn = document.querySelector(".menu__list-burger");
 
-const menu = document.querySelector(".page-nav-list");
+const menu = document.querySelector(".menu__list-item");
 
 console.log(btn, menu);
 

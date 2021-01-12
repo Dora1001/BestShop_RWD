@@ -1,0 +1,91 @@
+
+.contact {
+  @include flex();
+  margin-bottom: 60px;
+  margin-top: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  &__p {
+    font-family: $fontRaleway;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+  }
+}
+
+
+.contact__text {
+  position: relative;
+  flex-direction: column;
+  margin-right: 50px;
+  font-family: $fontOpensans;
+}
+
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+
+.contact__form--label {
+  color: blue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.contact__form--input {
+  border-bottom: 1px solid blue;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+
+
+.contact__tel {
+  margin-left: 70px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 193px;
+    left: 210px;
+    background-image: url("../../images/Phone Icon.svg");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+.contact__mail {
+  margin-left: 30px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 193px;
+    left: 0;
+    background-image: url("../../images/Mail Icon.svg");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+}
+

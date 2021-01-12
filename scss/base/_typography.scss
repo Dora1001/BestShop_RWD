@@ -1,1 +1,25 @@
 
+h2 {
+  font-family: $fontRaleway;
+  font-weight: 300;
+  font-size: 36px;
+  padding: 20px 20px 20px 0;
+}
+
+h1 {
+  font-family: $fontRaleway;
+  font-size: 41px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: $fontRaleway;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+ul li {
+  font-family: $fontOpensans;
+}

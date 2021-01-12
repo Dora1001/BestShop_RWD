@@ -1,0 +1,66 @@
+
+.popular {
+  padding: 0;
+
+  &__h2 {
+    text-align: center;
+  }
+
+
+  &__p {
+    color: grey;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+
+.popular__boxes {
+  @include flex();
+  flex-wrap: wrap;
+  font-family: $fontRaleway;
+}
+
+.popular__box {
+  @include flex();
+  flex-direction: column;
+  position: relative;
+  margin: 30px 60px 30px 60px;
+}
+
+.popular__image {
+
+  &--cat {
+    width: 52px;
+  }
+
+  &--eye {
+    width: 65px;
+    margin-top: 8px;
+  }
+
+  &--person {
+    width: 44px;
+  }
+}
+
+.popular__dot {
+  @include mostpopular-icon-dots();
+
+  &--person {
+
+    background-color: $pinkColor;
+    left: -5px;
+  }
+
+ &--eye {
+
+    background-color: $blueColor;
+    left: 45px;
+  }
+
+&--cat {
+
+    background-color: $greenColor;
+    left: 5px;
+  }
+}

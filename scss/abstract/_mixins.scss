@@ -17,11 +17,12 @@
 
 }
 
-@mixin pricing__Boxes() {
+@mixin pricing__Boxes($width) {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  width: $width;
 }
 
 

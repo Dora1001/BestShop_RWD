@@ -88,3 +88,18 @@
 
 }
 
+@media  (max-width: 525px) {
+
+  .contact__text {
+    margin-right: 0;
+  }
+
+  .contact__tel:before {
+    top: 180px;
+  }
+
+  .contact__mail:before {
+    top: 180px;
+  }
+
+}

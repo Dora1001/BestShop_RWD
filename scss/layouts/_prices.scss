@@ -13,28 +13,26 @@
 
 .pricing__threeBox {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 
 .pricing__firstBox {
-  @include pricing__Boxes();
-  width: 250px;
+  @include pricing__Boxes(250px);
   margin: 30px;
   height: 480px;
   border: 1px solid $pinkColor;
 }
 
 .pricing__thirdBox {
-  @include pricing__Boxes();
-  width: 250px;
+  @include pricing__Boxes(250px);
   margin: 30px;
   height: 480px;
   border: 1px solid $greenColor;
 }
 
 .pricing__secondBox {
-  @include pricing__Boxes();
-  width: 250px;
+  @include pricing__Boxes(250px);
   height: 520px;
   border: 1px solid $blueColor;
 }
@@ -124,5 +122,25 @@
 }
 
 
+@media  (max-width: 820px) {
+
+  .pricing__threeBox {
+    flex-direction: column;
+  }
+
+  .pricing__firstBox, .pricing__secondBox, .pricing__thirdBox {
+    @include pricing__Boxes(500px);
+  }
+
+}
+
+
+@media  (max-width: 525px) {
+
+  .pricing__firstBox, .pricing__secondBox, .pricing__thirdBox {
+    @include pricing__Boxes(250px);
+  }
+
+}
 
 

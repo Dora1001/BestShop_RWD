@@ -54,15 +54,30 @@
     left: -5px;
   }
 
- &--eye {
+  &--eye {
 
     background-color: $blueColor;
     left: 45px;
   }
 
-&--cat {
+  &--cat {
 
     background-color: $greenColor;
     left: 5px;
   }
+}
+
+@media (max-width: 525px) {
+
+  .popular__dot--cat {
+    left: 30px;
+  }
+
+  .popular__dot--eye {
+    left: 60px;
+  }
+  .popular__dot--person {
+    left: 15px;
+  }
+
 }

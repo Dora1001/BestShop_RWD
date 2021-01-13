@@ -1,5 +1,4 @@
 
-
 .header {
   @include flex();
   flex-direction: column;
@@ -41,15 +40,22 @@
   font-size: 14px;
   font-weight: 600;
 
-  &:hover::after {
+
+  &::after {
     content: "";
     position: absolute;
     top: 35px;
     left: 30px;
-    width: 60px;
+    width: 0px;
     height: 3px;
     background-color: $blueColor;
-    transition: all 5s ease;
+    transition: width 0.2s;
+    opacity: 0;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    width: 60px;
   }
 
 }
@@ -74,8 +80,6 @@
 
 
   &__p {
-    font-size: 16px;
-    font-family: $fontOpensans;
     padding: 25px 0 35px 0;
   }
 
@@ -94,14 +98,12 @@
   border-radius: 40px;
   border: 0;
   color: white;
-  box-shadow: 5px 10px 14px, $blueColor;
+  box-shadow: 1px 1px 1px $blueColor;
   font-size: 18px;
-
+  transition: all 0.2s ease-out;
 
   &:hover {
-    box-shadow: 2px 2px 5px #08A6E4;
-    transition: all 200ms ease-out;
-
+    box-shadow: 2px 2px 5px $blueColor;
   }
 
   &:focus {
@@ -138,3 +140,12 @@
   }
 }
 
+@media (max-width: 525px) {
+
+  .banner__button-open {
+    width: 305px;
+  }
+  .banner__background {
+    display: none;
+  }
+}

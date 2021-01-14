@@ -18,6 +18,11 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  outline: 0;
+  border: 0;
+}
+
 p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -81,16 +86,18 @@ ul li {
 }
 
 .menu__logo-name {
-  color: #08A6E4;
+  color: #08a6e4;
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-weight: 300;
   margin-left: 60px;
+  z-index: 1;
 }
 
 .menu__list-item {
   display: flex;
   flex-direction: row;
+  transition: all 0.2s ease;
 }
 
 .menu__item {
@@ -115,7 +122,7 @@ ul li {
   left: 30px;
   width: 0px;
   height: 3px;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
   transition: width 0.2s;
   opacity: 0;
 }
@@ -125,14 +132,48 @@ ul li {
 }
 
 .menu__list-burger {
-  color: #08A6E4;
-  margin-right: 20px;
-  transition: all 5s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  width: 50px;
+  height: 35px;
+  background-color: white;
   display: none;
 }
-.menu__list-burger .fa, .menu__list-burger .far, .menu__list-burger .fas {
-  font-family: "Font Awesome 5 Free";
-  font-size: 30px;
+.menu__list-burger span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #08a6e4;
+  left: 0;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+.menu__list-burger span:nth-child(1) {
+  top: 0;
+}
+.menu__list-burger span:nth-child(2) {
+  top: calc(50% - 3px);
+}
+.menu__list-burger span:nth-child(3) {
+  bottom: 0;
+}
+
+.menu__list-burger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: calc(50% - 3px);
+}
+.menu__list-burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu__list-burger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: calc(50% - 3px);
+}
+
+.menu__list-burger.active {
+  transform: rotate(90deg);
 }
 
 .banner {
@@ -154,16 +195,16 @@ ul li {
   display: inline-block;
   width: 440px;
   height: 80px;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
   border-radius: 40px;
   border: 0;
   color: white;
-  box-shadow: 1px 1px 1px #08A6E4;
+  box-shadow: 1px 1px 1px #08a6e4;
   font-size: 18px;
   transition: all 0.2s ease-out;
 }
 .banner__button-open:hover {
-  box-shadow: 2px 2px 5px #08A6E4;
+  box-shadow: 2px 2px 5px #08a6e4;
 }
 .banner__button-open:focus {
   outline: 0 solid transparent;
@@ -178,17 +219,17 @@ ul li {
     position: fixed;
     top: -290px;
     background: white;
-    border-bottom: 1px solid grey;
     flex-direction: column;
     width: 100%;
     align-items: center;
     box-sizing: border-box;
-    padding: 0px;
+    padding: 0;
     margin-top: 100px;
   }
 
   .menu__list-item.show {
     top: 0;
+    box-shadow: 0 2px 2px rgba(8, 166, 228, 0.3);
   }
   .menu__list-item.show .header {
     margin-top: 300px;
@@ -259,7 +300,7 @@ ul li {
   left: -5px;
 }
 .popular__dot--eye {
-  background-color: #08A6E4;
+  background-color: #08a6e4;
   left: 45px;
 }
 .popular__dot--cat {
@@ -361,7 +402,7 @@ ul li {
   margin-top: 30px;
   width: 350px;
   height: 4px;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
 }
 .article__line--green {
   display: flex;
@@ -392,7 +433,7 @@ ul li {
   justify-content: center;
   align-self: center;
   position: absolute;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
   border-radius: 50%;
   width: 320px;
   height: 320px;
@@ -494,7 +535,7 @@ ul li {
   border-radius: 5px;
   width: 250px;
   height: 520px;
-  border: 1px solid #08A6E4;
+  border: 1px solid #08a6e4;
 }
 
 .pricing__title {
@@ -514,7 +555,7 @@ ul li {
   color: #FB3B64;
 }
 .pricing__dolar--blue {
-  color: #08A6E4;
+  color: #08a6e4;
 }
 .pricing__dolar--green {
   color: #55DFB4;
@@ -562,7 +603,7 @@ ul li {
 }
 .pricing__button--professional {
   margin-top: 61px;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
 }
 .pricing__button--premium {
   background-color: #55DFB4;
@@ -627,13 +668,13 @@ ul li {
 }
 
 .contact__form-label {
-  color: #08A6E4;
+  color: #08a6e4;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
 
 .contact__form-input {
-  border-bottom: 1px solid #08A6E4;
+  border-bottom: 1px solid #08a6e4;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -650,7 +691,7 @@ ul li {
 }
 .contact__tel:before {
   position: absolute;
-  content: url("../../images/phone_icon.svg");
+  content: url("../images/phone_icon.svg");
   top: 187px;
   left: 210px;
   width: 20px;
@@ -662,7 +703,7 @@ ul li {
 }
 .contact__mail:before {
   position: absolute;
-  content: url("../../images/mail_icon.svg");
+  content: url("../images/mail_icon.svg");
   top: 187px;
   left: 0;
   width: 20px;
@@ -685,7 +726,7 @@ ul li {
 }
 
 .contact__checkbox-input:checked + .contact__checkbox-span {
-  background-color: #08A6E4;
+  background-color: #08a6e4;
 }
 
 .contact__checkbox-span {

@@ -38,22 +38,25 @@
   margin-right: 70px;
 }
 
-.contact__form--label {
-  color: blue;
+.contact__form-label {
+  color: $blueColor;
   font-family: $fontOpensans;
   font-size: 12px;
 }
 
-.contact__form--input {
-  border-bottom: 1px solid blue;
+.contact__form-input {
+  border-bottom: 1px solid $blueColor;
   border-top: 0;
   border-left: 0;
   border-right: 0;
   width: 300px;
   height: 40px;
   margin-bottom: 30px;
-}
 
+  &:focus {
+    outline: 0;
+  }
+}
 
 
 .contact__tel {
@@ -61,11 +64,9 @@
 
   &:before {
     position: absolute;
-    content: "";
-    top: 193px;
+    content: url("../../images/phone_icon.svg");
+    top: 187px;
     left: 210px;
-    background-image: url("/images/phone_icon.svg");
-    background-size: cover;
     width: 20px;
     height: 20px;
   }
@@ -77,29 +78,73 @@
 
   &:before {
     position: absolute;
-    content: "";
-    top: 193px;
+    content: url("../../images/mail_icon.svg");
+    top: 187px;
     left: 0;
-    background-image: url("/images/mail_icon.svg");
-    background-size: cover;
     width: 20px;
     height: 20px;
   }
 
 }
 
-@media  (max-width: 525px) {
+.contact__checkbox {
+margin: 0.5rem 1rem 0.5rem 1rem;
+
+  &-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &-label {
+    position: relative;
+    display: flex;
+  }
+}
+
+
+.contact__checkbox-input:checked + .contact__checkbox-span {
+  background-color: $blueColor;
+}
+
+.contact__checkbox-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #bcbcbc;
+}
+
+.checkbox__p {
+  padding-left: 2rem;
+  text-align: left;
+  font-size: 12px;
+  color: #A5A5A5;
+}
+
+
+
+@media (max-width: 525px) {
 
   .contact__text {
     margin-right: 0;
   }
-
-  .contact__tel:before {
-    top: 180px;
+  .contact__form {
+    margin-right: 0;
   }
 
-  .contact__mail:before {
-    top: 180px;
-  }
-
+  .contact__tel:before, .contact__mail:before {
+      top: 177px;
+    }
 }
+@media (min-width: 800px) {
+  .contact__checkbox {
+    width: 800px;
+  }
+  }

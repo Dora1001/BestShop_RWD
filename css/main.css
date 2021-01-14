@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   box-sizing: border-box;
 }
@@ -50,7 +58,6 @@ ul li {
 
   p {
     font-size: 16px;
-    margin: 0 30px 0 30px;
     text-align: center;
   }
 
@@ -159,7 +166,7 @@ ul li {
   box-shadow: 2px 2px 5px #08A6E4;
 }
 .banner__button-open:focus {
-  outline: 0px solid transparent;
+  outline: 0 solid transparent;
 }
 
 @media (max-width: 820px) {
@@ -619,14 +626,14 @@ ul li {
   margin-right: 70px;
 }
 
-.contact__form--label {
-  color: blue;
+.contact__form-label {
+  color: #08A6E4;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
 
-.contact__form--input {
-  border-bottom: 1px solid blue;
+.contact__form-input {
+  border-bottom: 1px solid #08A6E4;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -634,17 +641,18 @@ ul li {
   height: 40px;
   margin-bottom: 30px;
 }
+.contact__form-input:focus {
+  outline: 0;
+}
 
 .contact__tel {
   margin-left: 70px;
 }
 .contact__tel:before {
   position: absolute;
-  content: "";
-  top: 193px;
+  content: url("../../images/phone_icon.svg");
+  top: 187px;
   left: 210px;
-  background-image: url("/images/phone_icon.svg");
-  background-size: cover;
   width: 20px;
   height: 20px;
 }
@@ -654,13 +662,49 @@ ul li {
 }
 .contact__mail:before {
   position: absolute;
-  content: "";
-  top: 193px;
+  content: url("../../images/mail_icon.svg");
+  top: 187px;
   left: 0;
-  background-image: url("/images/mail_icon.svg");
-  background-size: cover;
   width: 20px;
   height: 20px;
+}
+
+.contact__checkbox {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.contact__checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.contact__checkbox-label {
+  position: relative;
+  display: flex;
+}
+
+.contact__checkbox-input:checked + .contact__checkbox-span {
+  background-color: #08A6E4;
+}
+
+.contact__checkbox-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #bcbcbc;
+}
+
+.checkbox__p {
+  padding-left: 2rem;
+  text-align: left;
+  font-size: 12px;
+  color: #A5A5A5;
 }
 
 @media (max-width: 525px) {
@@ -668,12 +712,17 @@ ul li {
     margin-right: 0;
   }
 
-  .contact__tel:before {
-    top: 180px;
+  .contact__form {
+    margin-right: 0;
   }
 
-  .contact__mail:before {
-    top: 180px;
+  .contact__tel:before, .contact__mail:before {
+    top: 177px;
+  }
+}
+@media (min-width: 800px) {
+  .contact__checkbox {
+    width: 800px;
   }
 }
 /*# sourceMappingURL=main.css.map */

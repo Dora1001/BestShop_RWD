@@ -711,7 +711,7 @@ ul li {
 }
 
 .contact__checkbox {
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 auto;
 }
 .contact__checkbox-input {
   position: absolute;

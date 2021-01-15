@@ -766,4 +766,7 @@ ul li {
     width: 800px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=main.css.map */
